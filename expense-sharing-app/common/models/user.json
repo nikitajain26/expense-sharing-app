@@ -1,0 +1,181 @@
+{
+    "name": "User",
+    "plural": "User",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+        "validateUpsert": true
+    },
+    "mysql": {
+        "table": "user"
+    },
+    "properties": {
+        "UserID": {
+            "type": "Number",
+            "id": true,
+            "required": false,
+            "length": null,
+            "precision": 19,
+            "scale": 0,
+            "mysql": {
+                "columnName": "UserID",
+                "dataType": "bigint",
+                "dataLength": null,
+                "dataPrecision": 19,
+                "dataScale": 0,
+                "nullable": "N"
+            },
+            "_selectable": false
+        },
+        "UserEmailID": {
+            "type": "String",
+            "required": false,
+            "length": null,
+            "precision": 500,
+            "scale": 0,
+            "mysql": {
+                "columnName": "UserEmailID",
+                "dataType": "varchar",
+                "dataLength": null,
+                "dataPrecision": 500,
+                "dataScale": 0,
+                "nullable": "Y"
+            },
+            "_selectable": true
+        },
+        "UserMobileNo": {
+            "type": "String",
+            "required": false,
+            "length": null,
+            "precision": 500,
+            "scale": 0,
+            "mysql": {
+                "columnName": "UserMobileNo",
+                "dataType": "varchar",
+                "dataLength": null,
+                "dataPrecision": 500,
+                "dataScale": 0,
+                "nullable": "Y"
+            },
+            "_selectable": true
+        },
+        "UserNickName": {
+            "type": "String",
+            "required": false,
+            "length": null,
+            "precision": 500,
+            "scale": 0,
+            "mysql": {
+                "columnName": "UserNickName",
+                "dataType": "varchar",
+                "dataLength": null,
+                "dataPrecision": 500,
+                "dataScale": 0,
+                "nullable": "Y"
+            },
+            "_selectable": true
+        },
+        "Password": {
+            "type": "String",
+            "required": false,
+            "length": null,
+            "precision": 500,
+            "scale": 0,
+            "mysql": {
+                "columnName": "Password",
+                "dataType": "varchar",
+                "dataLength": null,
+                "dataPrecision": 500,
+                "dataScale": 0,
+                "nullable": "Y"
+            },
+            "_selectable": true
+        },
+        "LastLogin": {
+            "type": "Date",
+            "defaultFn": "now",
+            "required": false,
+            "length": null,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "LastLogin",
+                "dataType": "datetime",
+                "dataLength": null,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            },
+            "_selectable": true
+        },
+        "Active": {
+            "type": "Boolean",
+            "required": false,
+            "length": null,
+            "precision": 1,
+            "scale": null,
+            "mysql": {
+                "columnName": "Active",
+                "dataType": "tinyint",
+                "dataLength": null,
+                "dataPrecision": 1,
+                "dataScale": null,
+                "nullable": "N"
+            },
+            "_selectable": true
+        },
+        "Archived": {
+            "type": "Boolean",
+            "required": false,
+            "length": null,
+            "precision": 1,
+            "scale": null,
+            "mysql": {
+                "columnName": "Archived",
+                "dataType": "tinyint",
+                "dataLength": null,
+                "dataPrecision": 1,
+                "dataScale": null,
+                "nullable": "N"
+            },
+            "_selectable": true
+        },
+        "CreatedDate": {
+            "type": "Date",
+            "defaultFn": "now",
+            "required": false,
+            "length": null,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "CreatedDate",
+                "dataType": "datetime",
+                "dataLength": null,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            },
+            "_selectable": true
+        },
+        "UpdatedDate": {
+            "type": "Date",
+            "required": false,
+            "defaultFn": "now",
+            "length": null,
+            "precision": null,
+            "scale": null,
+            "mysql": {
+                "columnName": "UpdatedDate",
+                "dataType": "datetime",
+                "dataLength": null,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}
