@@ -8,7 +8,7 @@
 * Open http://localhost:3000/explorer to hit the APIs using Loopback API explorer on your browser.
 
 * The structure and models of the project can be described as -
-    Models :
+    ```Models :
       1). User - This stores basic details of the user along with their username and password.
         APIs ->
         * loginWithPassword : API validates user credentials and logs in the user into the app.
